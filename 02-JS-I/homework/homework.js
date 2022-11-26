@@ -16,7 +16,7 @@ const nuevaResta = 10 - 5 === 5;
 const nuevaMultiplicacion = 10 * 4 === 40 ;
 
 // Resuelve el siguiente problema matemático:
-const nuevoModulo = 21 % 5 === 4.2;
+const nuevoModulo = 21 % 5 == true;
 
 
 // En los próximos 22 problemas, deberás completar la función.
@@ -179,7 +179,7 @@ function redondearHaciaArriba(num) {
 function numeroRandom() {
   //Generar un número al azar entre 0 y 1 y devolverlo
   //Pista: investigá qué hace el método Math.random()
-  return Math.floor(Math.random()*10);
+  return Math.floor(Math.random()*1);
   
 }
 
@@ -189,11 +189,11 @@ function esPositivo(numero) {
   //Si el número es negativo, devolver ---> "Es negativo"
   //Si el número es 0, devuelve false
   if (numero>0) {
-    return "es positivo";       
+    return "Es positivo";       
       }if(numero==0){
         return false;
         }if(numero<0){
-          return "es negativo";
+          return "Es negativo";
           }
   
 }
@@ -217,8 +217,8 @@ function obtenerSaludo(nombre) {
   // Toma la string "nombre" y concatena otras string en la cadena para que tome la siguiente forma:
   // "Martin" -> "Hola Martin!"
   // Tu código:
-  nombre="Hola";
-  return nombre+" Martin!";
+  /*nombre="Hola";*/
+  return "Hola "+nombre+"!";
   
 }
 
@@ -226,7 +226,7 @@ function obtenerAreaRectangulo(alto, ancho) {
   // Retornar el area de un rectángulo teniendo su altura y ancho
   // Tu código:
   area=alto*ancho;
-  return "El area del rectangulo en metros es: "+ area +" Metros";
+  return area;
   
 }
 
@@ -234,8 +234,8 @@ function obtenerAreaRectangulo(alto, ancho) {
 function retornarPerimetro(lado){
   //Escibe una función a la cual reciba el valor del lado de un cuadrado y retorne su perímetro.
   //Escribe tu código aquí
-  perimetro=lado*4;
-  return "El perimetro en metros del cuadrado es : "+ perimetro +" Metros";
+  perímetro=lado*4;
+  return perímetro;
   
 }
 
@@ -244,7 +244,7 @@ function areaDelTriangulo(base, altura){
   //Desarrolle una función que calcule el área de un triángulo.
   //Escribe tu código aquí
   Area=(base*altura)/2
-  return "El Area del triangulo tomando su lado mas alto como base en metros es: "+ Area+" metros cuadrados";
+  return Area;
 
 
 }
@@ -257,7 +257,7 @@ function deEuroAdolar(euro){
 
   dolares=1.20;
   cambio=euro*dolares;
-  return "el cambio a dólares de los euros ingresados es de :"+cambio+" dólares";
+  return cambio;
   
 }
 
